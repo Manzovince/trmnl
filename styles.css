@@ -1,0 +1,38 @@
+body {
+    background-color: #15181A;
+    color: #F1ECE2;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+main {
+    height: 100vh;
+    padding: 6%;
+}
+
+#time {
+    font-size: 5rem;
+}
+
+#date {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+#terminal {
+    margin: 4% 0;
+}
+
+#input {
+    font-family: 'Noto Sans Mono', monospace;
+    color: inherit;
+    font-size: 1.4rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    caret-color: #F1ECE2;
+  }
+
+#bookmarks {
+    height: 100vh;
+    padding: 6%;
+}
