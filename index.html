@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,32 +9,60 @@
     <link rel='icon' type='image/png' href='img/favicon.png'>
     <!-- Styles -->
     <link rel="stylesheet" href="./styles.css">
-    <link href="http://fonts.cdnfonts.com/css/menlo" rel="stylesheet">
-    <!-- Script -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/mononoki.min.css">
+    <!-- Load Data -->
+    <script src="./data-bookmarks.js"></script>
+    <!-- Title -->
     <title>trmnl.</title>
 </head>
+
 <body>
     <main id="header">
         <div id="time">12:34</div>
         <div id="date">14, October 2021</div>
         <div id="terminal">
             <span>~</span>
-            <input id="input"
-            type="text"
-            autofocus
-            autocomplete="off"
-            spellcheck="false"
-            autocapitalize="none"
-            autocorrect="off">
+            <input id="input" type="text" autofocus autocomplete="off" spellcheck="false" autocapitalize="none" autocorrect="off">
         </div>
         <div id="message"></div>
     </main>
     <section id="bookmarks">
-        <div class="title">Bookmarks</div>
+        <div id="bookmark-header">
+            <div class="title">Bookmarks</div>
+            <button id="btn-add">+</button>
+            <div id="modal-addbookmark" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-title">Add new bookmark</div>
+                    <div class="form-group">
+                        <label for="">URL</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Tags</label>
+                        <input type="text" class="form-input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="folder-list">
+            <button class="folder">Science</button>
+            <button class="folder">Programming</button>
+            <button class="folder">Design</button>
+            <button class="folder">Utilities</button>
+        </div>
+        <div id="tag-list"></div>
+        <hr>
+        <div id="url-list"></div>
 
-
-        
     </section>
     <script src="./scripts.js"></script>
 </body>
+
 </html>
